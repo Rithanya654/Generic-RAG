@@ -1,0 +1,71 @@
+GraphRAG V4 Query Results - 1706.03762v7.pdf
+============================================================
+
+Query 1: What are the main entities in this document?
+----------------------------------------
+Found 10 results:
+
+  {'entity': 'John Martinis', 'type': 'PERSON', 'salience': 'IMPORTANT'}
+  {'entity': 'John Preskill', 'type': 'PERSON', 'salience': 'IMPORTANT'}
+  {'entity': 'Quantum Error Correction', 'type': 'CONCEPT', 'salience': 'IMPORTANT'}
+  {'entity': 'Google', 'type': 'ORGANIZATION', 'salience': 'CORE'}
+  {'entity': 'IBM', 'type': 'ORGANIZATION', 'salience': 'CORE'}
+  {'entity': 'IBM', 'type': 'ORGANIZATION', 'salience': 'CORE'}
+  {'entity': 'Microsoft', 'type': 'ORGANIZATION', 'salience': 'CORE'}
+  {'entity': 'Quantum Computing', 'type': 'CONCEPT', 'salience': 'CORE'}
+  {'entity': 'Quantum Computing', 'type': 'CONCEPT', 'salience': 'CORE'}
+  {'entity': 'Quantum Computing', 'type': 'CONCEPT', 'salience': 'CORE'}
+
+============================================================
+
+Query 2: What relationships exist between key entities?
+----------------------------------------
+Found 15 results:
+
+  {'source': 'Quantum Computing', 'relationship': 'USES', 'target': 'Quantum Error Correction'}
+  {'source': 'Quantum Computing', 'relationship': 'ACHIEVES', 'target': 'Quantum Supremacy'}
+  {'source': 'Quantum Computing', 'relationship': 'DEVELOPS', 'target': 'Quantum Machine Learning'}
+  {'source': 'Quantum Computing', 'relationship': 'RUNS', 'target': 'Quantum Algorithms'}
+  {'source': 'Quantum Computing', 'relationship': 'PERFORMS', 'target': 'Quantum Simulation'}
+  {'source': 'Quantum Computing', 'relationship': 'USES', 'target': 'Quantum Error Correction'}
+  {'source': 'Quantum Computing', 'relationship': 'ACHIEVES', 'target': 'Quantum Supremacy'}
+  {'source': 'Quantum Computing', 'relationship': 'DEVELOPS', 'target': 'Quantum Machine Learning'}
+  {'source': 'Quantum Computing', 'relationship': 'RUNS', 'target': 'Quantum Algorithms'}
+  {'source': 'Quantum Computing', 'relationship': 'PERFORMS', 'target': 'Quantum Simulation'}
+  {'source': 'Quantum Computing', 'relationship': 'USES', 'target': 'Quantum Error Correction'}
+  {'source': 'Quantum Computing', 'relationship': 'ACHIEVES', 'target': 'Quantum Supremacy'}
+  {'source': 'Quantum Computing', 'relationship': 'DEVELOPS', 'target': 'Quantum Machine Learning'}
+  {'source': 'Quantum Computing', 'relationship': 'RUNS', 'target': 'Quantum Algorithms'}
+  {'source': 'Quantum Computing', 'relationship': 'PERFORMS', 'target': 'Quantum Simulation'}
+
+============================================================
+
+Query 3: How are entities organized in communities?
+----------------------------------------
+Found 6 results:
+
+  {'community': '0', 'members': ['Quantum algorithms']}
+  {'community': '1', 'members': ['Google', 'Sycamore', 'Quantum supremacy']}
+  {'community': '2', 'members': ['Quantum simulation']}
+  {'community': '3', 'members': ['Quantum machine learning']}
+  {'community': '4', 'members': ['Quantum Computing', 'Quantum Computing', 'Quantum Computing', 'IBM', 'IBM', 'Microsoft', 'Quantum Supremacy']}
+  {'community': '5', 'members': ['Quantum error correction']}
+
+============================================================
+
+Query 4: What are the main sections and their entities?
+----------------------------------------
+Error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: s (line 4, column 18 (offset: 131))
+"        ORDER BY s.section_id"
+                  ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+============================================================
+
+Query 5: Summary statistics
+----------------------------------------
+Found 1 results:
+
+  {'entities': 20, 'relationships': 50, 'communities': 6}
+
+============================================================
+

@@ -1,0 +1,8 @@
+neo4j>=5.0.0
+python-dotenv>=1.0.0
+openai>=1.0.0
+groq>=0.4.0
+docling>=2.0.0
+tiktoken>=0.5.0
+networkx>=3.0.0
+python-louvain>=0.16

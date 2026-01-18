@@ -1,0 +1,84 @@
+Graph-Based Answers (No LLM) - 1706.03762v7.pdf
+============================================================
+
+Question 1: What is the main focus of this document?
+----------------------------------------
+Answer: The document focuses on: Google, IBM, Microsoft. These are identified as core concepts.
+
+Supporting Evidence:
+  {'core_entities': ['Google', 'IBM', 'Microsoft', 'Quantum Computing', 'Quantum Supremacy', 'Quantum algorithms', 'Quantum error correction', 'Quantum machine learning', 'Quantum simulation', 'Quantum supremacy', 'Sycamore']}
+
+============================================================
+
+Question 2: What are the key relationships between main concepts?
+----------------------------------------
+Answer: Key relationships include: John Preskill -> CONTRIBUTES_TO -> Quantum Computing; John Martinis -> LED_DEVELOPMENT -> Sycamore; John Preskill -> CONTRIBUTES_TO -> Quantum Computing.
+
+Supporting Evidence:
+  {'relationship': 'John Preskill -> CONTRIBUTES_TO -> Quantum Computing'}
+  {'relationship': 'John Martinis -> LED_DEVELOPMENT -> Sycamore'}
+  {'relationship': 'John Preskill -> CONTRIBUTES_TO -> Quantum Computing'}
+  {'relationship': 'John Preskill -> CONTRIBUTES_TO -> Quantum Computing'}
+  {'relationship': 'Quantum Computing -> USES -> Quantum Error Correction'}
+  {'relationship': 'Quantum Computing -> USES -> Quantum Error Correction'}
+  {'relationship': 'Quantum Computing -> USES -> Quantum Error Correction'}
+  {'relationship': 'Google -> DEVELOPS -> Quantum Computing'}
+  {'relationship': 'Quantum Computing -> ACHIEVES -> Quantum Supremacy'}
+  {'relationship': 'Google -> DEVELOPED -> Sycamore'}
+
+============================================================
+
+Question 3: How are concepts organized in communities?
+----------------------------------------
+Error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: e (line 5, column 18 (offset: 228))
+"        ORDER BY e.community_id"
+                  ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+============================================================
+
+Question 4: What sections contain the most important entities?
+----------------------------------------
+Answer: The most important section is "Pages 5-8" with 13 key entities.
+
+Supporting Evidence:
+  {'section': 'Pages 5-8', 'important_entities': 13, 'entities': ['Quantum Computing', 'Quantum Computing', 'Quantum Computing', 'Google', 'IBM', 'IBM', 'Microsoft', 'John Preskill', 'Quantum supremacy', 'Quantum error correction', 'Quantum algorithms', 'Quantum simulation', 'Quantum machine learning']}
+  {'section': 'Pages 1-4', 'important_entities': 9, 'entities': ['Quantum Computing', 'Quantum Computing', 'Quantum Computing', 'Google', 'IBM', 'IBM', 'Sycamore', 'John Martinis', 'Quantum supremacy']}
+  {'section': 'Pages 9-12', 'important_entities': 9, 'entities': ['Quantum Computing', 'Quantum Computing', 'Quantum Computing', 'Google', 'IBM', 'IBM', 'Microsoft', 'Quantum Supremacy', 'John Preskill']}
+  {'section': 'Pages 13-15', 'important_entities': 9, 'entities': ['Quantum Computing', 'Quantum Computing', 'Quantum Computing', 'Google', 'IBM', 'IBM', 'Quantum Supremacy', 'John Preskill', 'Quantum Error Correction']}
+
+============================================================
+
+Question 5: What is the hierarchy of concepts?
+----------------------------------------
+Answer: No relevant information found in the graph.
+
+============================================================
+
+Question 6: What are the most connected entities?
+----------------------------------------
+Answer: The most connected entity is "Quantum Computing" with 48 connections.
+
+Supporting Evidence:
+  {'entity': 'Quantum Computing', 'connections': 48}
+  {'entity': 'IBM', 'connections': 16}
+  {'entity': 'Google', 'connections': 10}
+  {'entity': 'Quantum Supremacy', 'connections': 9}
+  {'entity': 'Microsoft', 'connections': 6}
+
+============================================================
+
+Question 7: What patterns exist in the relationships?
+----------------------------------------
+Answer: Relationship patterns: DEVELOPS (12 times), ACHIEVED (4 times), USES (3 times), ACHIEVES (3 times), CONTRIBUTES_TO (3 times), DEVELOPED (1 times), LED_DEVELOPMENT (1 times).
+
+Supporting Evidence:
+  {'relationship_type': 'DEVELOPS', 'frequency': 12}
+  {'relationship_type': 'ACHIEVED', 'frequency': 4}
+  {'relationship_type': 'USES', 'frequency': 3}
+  {'relationship_type': 'ACHIEVES', 'frequency': 3}
+  {'relationship_type': 'CONTRIBUTES_TO', 'frequency': 3}
+  {'relationship_type': 'DEVELOPED', 'frequency': 1}
+  {'relationship_type': 'LED_DEVELOPMENT', 'frequency': 1}
+
+============================================================
+

@@ -1,0 +1,76 @@
+{
+  "Revenue": {
+    "category": "Income Statement",
+    "aliases": [
+      "revenue",
+      "net revenue",
+      "total revenue",
+      "income",
+      "operating revenue",
+      "sales",
+      "total sales",
+      "gross revenue",
+      "turnover"
+    ]
+  },
+  "Profit": {
+    "category": "Income Statement",
+    "aliases": [
+      "profit",
+      "net profit",
+      "profit after tax",
+      "pat",
+      "earnings",
+      "net earnings",
+      "bottom line"
+    ]
+  },
+  "Expenses": {
+    "category": "Income Statement",
+    "aliases": [
+      "expenses",
+      "operating expenses",
+      "costs",
+      "total costs",
+      "operating costs",
+      "cost of sales",
+      "cost of goods sold"
+    ]
+  },
+  "Assets": {
+    "category": "Balance Sheet",
+    "aliases": [
+      "assets",
+      "total assets",
+      "current assets",
+      "non-current assets"
+    ]
+  },
+  "Liabilities": {
+    "category": "Balance Sheet",
+    "aliases": [
+      "liabilities",
+      "total liabilities",
+      "current liabilities",
+      "non-current liabilities"
+    ]
+  },
+  "Cash Flow": {
+    "category": "Cash Flow Statement",
+    "aliases": [
+      "cash flow",
+      "operating cash flow",
+      "net cash flow",
+      "cash from operations"
+    ]
+  },
+  "Equity": {
+    "category": "Balance Sheet",
+    "aliases": [
+      "equity",
+      "shareholders' equity",
+      "total equity",
+      "net assets"
+    ]
+  }
+}

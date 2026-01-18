@@ -1,0 +1,227 @@
+
+================================================================================
+RUN STARTED: 2026-01-16 18:44:09.660506
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+
+================================================================================
+RUN STARTED: 2026-01-16 18:46:00.475569
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+
+================================================================================
+RUN STARTED: 2026-01-16 18:50:47.135151
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+
+================================================================================
+RUN STARTED: 2026-01-16 18:59:50.021036
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+📄 Document ID: integrated_output
+📐 Sections: 0
+✅ Indexes and constraints created
+📐 Creating section nodes
+🧠 Extracting entities & relationships
+🔗 Extracting references
+💰 Normalizing financial entities
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+📅 Extracting time periods
+
+================================================================================
+RUN STARTED: 2026-01-16 19:01:21.132923
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+📄 Document ID: integrated_output
+📐 Sections: 0
+✅ Indexes and constraints created
+📐 Creating section nodes
+🧠 Extracting entities & relationships
+🔗 Extracting references
+💰 Normalizing financial entities
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+📅 Extracting time periods
+
+================================================================================
+RUN STARTED: 2026-01-16 19:02:18.390460
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+📄 Document ID: integrated_output
+📐 Sections: 0
+✅ Indexes and constraints created
+📐 Creating section nodes
+🧠 Extracting entities & relationships
+🔗 Extracting references
+💰 Normalizing financial entities
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+📅 Extracting time periods
+
+================================================================================
+RUN STARTED: 2026-01-16 19:04:39.831982
+======================================================================
+🚀 GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+📄 Document ID: integrated_output
+📐 Sections: 0
+✅ Indexes and constraints created
+📐 Creating section nodes
+🧠 Extracting entities & relationships
+🔗 Extracting references
+💰 Normalizing financial entities
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+📅 Extracting time periods
+
+================================================================================
+RUN STARTED: 2026-01-16 19:21:30.842719
+======================================================================
+GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+
+================================================================================
+RUN STARTED: 2026-01-16 19:28:09.747059
+======================================================================
+GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+
+================================================================================
+RUN STARTED: 2026-01-16 19:28:43.441516
+======================================================================
+GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+Document ID: integrated_output
+Sections detected: 66
+✅ Indexes and constraints created
+Creating Section nodes
+Running Bot 3 — Entity & Relationship Extraction
+Running Bot 4 — Reference Extraction
+Running Bot 5 — Financial Normalization
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+Running Bot 6 — Time Period Extraction
+
+================================================================================
+RUN STARTED: 2026-01-16 19:29:26.725195
+======================================================================
+GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+Document ID: integrated_output
+Sections detected: 66
+✅ Indexes and constraints created
+Creating Section nodes
+Running Bot 3 — Entity & Relationship Extraction
+Running Bot 4 — Reference Extraction
+Running Bot 5 — Financial Normalization
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+Running Bot 6 — Time Period Extraction
+Running Bot 8 — Financial Fact Extraction
+✅ Financial facts extracted: 0
+======================================================================
+PIPELINE COMPLETE
+entities: 4
+sections: 67
+relationships: 65
+timeperiods: 0
+financial_facts: 34
+======================================================================
+
+INTERACTIVE QUERY MODE
+Type a question and press Enter.
+Type 'end' to exit.
+
+Question > 
+================================================================================
+RUN STARTED: 2026-01-16 19:38:26.015528
+======================================================================
+GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+Document ID: integrated_output
+Sections detected: 66
+✅ Indexes and constraints created
+Creating Section nodes
+Running Bot 3 — Entity & Relationship Extraction
+Running Bot 4 — Reference Extraction
+Running Bot 5 — Financial Normalization
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+Running Bot 6 — Time Period Extraction
+Running Bot 8 — Financial Fact Extraction
+✅ Financial facts extracted: 0
+======================================================================
+PIPELINE COMPLETE
+entities: 4
+sections: 67
+relationships: 65
+timeperiods: 0
+financial_facts: 34
+======================================================================
+
+INTERACTIVE QUERY MODE
+Type a question and press Enter.
+Type 'end' to exit.
+
+Question > 
+[Query Intent] GRAPH_ONLY | What concepts are associated with financial performance?
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `NORMALIZED_TO` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=4, column=34, offset=155>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 155, 'line': 4, 'column': 34}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: "\n            MATCH (s:Section {doc_id:$doc})-[:MENTIONS]->(e:Entity)\n            WHERE e.salience IN ['CORE','IMPORTANT']\n            OPTIONAL MATCH (e)-[:NORMALIZED_TO]->(fc:FinancialConcept)\n            OPTIONAL MATCH (s)-[:APPLIES_TO]->(t:TimePeriod)\n            RETURN\n                s.section_id      AS section_id,\n                s.title           AS section_title,\n                s.page_start      AS page_start,\n                e.name            AS entity,\n                e.type            AS type,\n                e.description     AS description,\n                e.salience        AS salience,\n                fc.name           AS financial_concept,\n                t.label           AS time_period\n            ORDER BY e.salience DESC\n            LIMIT $limit\n            "
+Received notification from DBMS server: <GqlStatusObject gql_status='01N50', status_description='warn: label does not exist. The label `FinancialConcept` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=4, column=54, offset=175>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 175, 'line': 4, 'column': 54}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: "\n            MATCH (s:Section {doc_id:$doc})-[:MENTIONS]->(e:Entity)\n            WHERE e.salience IN ['CORE','IMPORTANT']\n            OPTIONAL MATCH (e)-[:NORMALIZED_TO]->(fc:FinancialConcept)\n            OPTIONAL MATCH (s)-[:APPLIES_TO]->(t:TimePeriod)\n            RETURN\n                s.section_id      AS section_id,\n                s.title           AS section_title,\n                s.page_start      AS page_start,\n                e.name            AS entity,\n                e.type            AS type,\n                e.description     AS description,\n                e.salience        AS salience,\n                fc.name           AS financial_concept,\n                t.label           AS time_period\n            ORDER BY e.salience DESC\n            LIMIT $limit\n            "
+
+🌍 QUERY: What concepts are associated with financial performance?
+============================================================
+💡 ANSWER:
+No relevant information found in the document graph.
+
+📚 REFERENCES:
+
+Question > What are the most important entities in this document?
+[#FE9D]  _: <CONNECTION> error: Failed to read from defunct connection ResolvedIPv4Address(('34.126.171.25', 7687)) (ResolvedIPv4Address(('34.126.171.25', 7687))): OSError('No data')
+Unable to retrieve routing information
+
+================================================================================
+RUN STARTED: 2026-01-16 20:17:46.250244
+======================================================================
+GraphRAG V4 — TEST RUN (JSON INPUT)
+======================================================================
+Document ID: integrated_output
+Sections detected: 66
+✅ Indexes and constraints created
+Creating Section nodes
+Running Bot 3 — Entity & Relationship Extraction
+Running Bot 4 — Reference Extraction
+Running Bot 5 — Financial Normalization
+✅ Financial normalization complete
+   New concepts created: 0
+   Entity links created: 0
+Running Bot 6 — Time Period Extraction
+Running Bot 8 — Financial Fact Extraction
+✅ Financial facts extracted: 0
+======================================================================
+PIPELINE COMPLETE
+entities: 4
+sections: 67
+relationships: 65
+timeperiods: 0
+financial_facts: 34
+======================================================================
+
+INTERACTIVE QUERY MODE
+Type a question and press Enter.
+Type 'end' to exit.
+
+Question > 
