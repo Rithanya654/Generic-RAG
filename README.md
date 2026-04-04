@@ -125,19 +125,6 @@ CHUNK_SIZE=1000
 CHUNK_OVERLAP=200
 MAX_PAGES=None
 
-## Project Structure
-
-├── bots/
-│   ├── bot1_parser.py
-│   ├── bot2_chunker.py
-│   └── bot3_extractor.py
-├── database/
-│   └── neo4j_client.py
-├── query/
-│   └── graph_query_engine.py
-├── main.py
-└── README.md
-
 ## When to Use Generic-RAG
 
 Use Generic-RAG when:
